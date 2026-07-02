@@ -1,0 +1,422 @@
+:root {
+    --bm-navy: #1e3a8a;
+    --bm-blue: #2563eb;
+    --bm-light-blue: #3b82f6;
+    --bm-sky: #dbeafe;
+    --bm-gold: #d4af37;
+    --bm-gold-dark: #b8860b;
+    --bm-grey: #6b7280;
+    --bm-grey-light: #f3f4f6;
+    --bm-white: #ffffff;
+    --bm-shadow: 0 10px 30px rgba(30, 58, 138, 0.08);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bm-grey-light);
+    color: #1f2937;
+}
+
+.navbar-bookmart {
+    background: linear-gradient(135deg, var(--bm-navy), var(--bm-blue));
+}
+
+.navbar-bookmart .navbar-brand,
+.navbar-bookmart .nav-link {
+    color: var(--bm-white) !important;
+}
+
+.navbar-bookmart .nav-link:hover {
+    color: var(--bm-gold) !important;
+}
+
+.btn-gold {
+    background-color: var(--bm-gold);
+    border-color: var(--bm-gold-dark);
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.btn-gold:hover {
+    background-color: var(--bm-gold-dark);
+    border-color: var(--bm-gold-dark);
+    color: var(--bm-white);
+}
+
+.btn-primary {
+    background-color: var(--bm-blue);
+    border-color: var(--bm-navy);
+}
+
+.btn-primary:hover {
+    background-color: var(--bm-navy);
+    border-color: var(--bm-navy);
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--bm-navy) 0%, var(--bm-light-blue) 100%);
+    color: var(--bm-white);
+    padding: 5rem 0;
+}
+
+.hero-section .lead {
+    color: #e5e7eb;
+}
+
+.feature-card,
+.product-card,
+.dashboard-card,
+.admin-card {
+    background: var(--bm-white);
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: var(--bm-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover,
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(30, 58, 138, 0.12);
+}
+
+.product-card img {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.price-tag {
+    color: var(--bm-navy);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.badge-campus {
+    background-color: var(--bm-sky);
+    color: var(--bm-navy);
+}
+
+.badge-gold {
+    background-color: var(--bm-gold);
+    color: #1f2937;
+}
+
+.section-title {
+    color: var(--bm-navy);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.auth-card {
+    max-width: 520px;
+    margin: 3rem auto;
+    background: var(--bm-white);
+    border-radius: 12px;
+    box-shadow: var(--bm-shadow);
+    padding: 2rem;
+}
+
+.footer-bookmart {
+    background: var(--bm-navy);
+    color: #cbd5e1;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.footer-bookmart a {
+    color: var(--bm-gold);
+    text-decoration: none;
+}
+
+.chat-box {
+    height: 420px;
+    overflow-y: auto;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.chat-message {
+    max-width: 75%;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+}
+
+.chat-message.sent {
+    background: var(--bm-blue);
+    color: white;
+    margin-left: auto;
+}
+
+.chat-message.received {
+    background: white;
+    border: 1px solid #e5e7eb;
+}
+
+.pickup-code {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    color: var(--bm-navy);
+}
+
+.admin-sidebar {
+    min-height: calc(100vh - 56px);
+    background: var(--bm-navy);
+}
+
+.admin-sidebar .nav-link {
+    color: #dbeafe;
+    border-radius: 8px;
+    margin-bottom: 0.25rem;
+}
+
+.admin-sidebar .nav-link.active,
+.admin-sidebar .nav-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--bm-gold);
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bm-sky);
+    color: var(--bm-navy);
+    font-size: 1.25rem;
+}
+
+.filter-bar {
+    background: white;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: var(--bm-shadow);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--bm-grey);
+}
+
+.wallet-balance {
+    font-size: 2rem;
+    color: var(--bm-navy);
+    font-weight: 700;
+}
+
+.table-bookmart thead {
+    background: var(--bm-sky);
+    color: var(--bm-navy);
+}
+
+.admin-card {
+    background: var(--bm-white);
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: var(--bm-shadow);
+}
+
+.admin-card canvas {
+    max-height: 280px;
+}
+
+.alert-bookmart {
+    border-left: 4px solid var(--bm-gold);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 0;
+    }
+
+    .pickup-code {
+        font-size: 1.5rem;
+        letter-spacing: 0.25rem;
+    }
+
+    .account-sidebar {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Account layout */
+.account-layout {
+    min-height: 60vh;
+}
+
+.account-sidebar {
+    background: var(--bm-white);
+    border-radius: 12px;
+    box-shadow: var(--bm-shadow);
+    padding: 1.5rem;
+    position: sticky;
+    top: 1rem;
+}
+
+.account-avatar-wrap {
+    width: 96px;
+    height: 96px;
+}
+
+.account-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--bm-sky);
+}
+
+.account-nav .nav-link {
+    color: #374151;
+    border-radius: 8px;
+    padding: 0.6rem 0.75rem;
+    margin-bottom: 0.15rem;
+}
+
+.account-nav .nav-link:hover,
+.account-nav .nav-link.active {
+    background: var(--bm-sky);
+    color: var(--bm-navy);
+    font-weight: 600;
+}
+
+.account-warnings .alert {
+    font-size: 0.8rem;
+}
+
+.navbar-bookmart .nav-link.active {
+    color: var(--bm-gold) !important;
+}
+
+/* Auth pages */
+body.auth-page {
+    background: linear-gradient(rgba(30, 58, 138, 0.82), rgba(37, 99, 235, 0.78)),
+        url('../img/auth-bg.jpg') center/cover no-repeat fixed;
+    min-height: 100vh;
+}
+
+.auth-page-wrap {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.auth-page .auth-card {
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.97);
+}
+
+.auth-card-wide {
+    max-width: 720px !important;
+}
+
+/* Face capture */
+.face-avatar-ring {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #dc3545;
+    padding: 3px;
+    transition: border-color 0.3s ease;
+}
+
+.face-avatar-ring.face-avatar-ready {
+    border-color: #198754;
+}
+
+.face-avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.face-capture-video-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    aspect-ratio: 3/4;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #111;
+}
+
+.face-capture-video-wrap video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.face-capture-status {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.status-dot.status-red {
+    background: #dc3545;
+    box-shadow: 0 0 8px #dc3545;
+}
+
+.status-dot.status-green {
+    background: #198754;
+    box-shadow: 0 0 10px #198754;
+    animation: pulse-green 1s infinite;
+}
+
+@keyframes pulse-green {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+/* Marketplace hero */
+.marketplace-hero {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(37, 99, 235, 0.85)),
+        url('../img/marketplace-banner.jpg') center/cover no-repeat;
+    color: white;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--bm-shadow);
+}
+
+.marketplace-hero h1 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.chat-list-item:hover {
+    background: #f9fafb;
+}
+
+.chat-call-panel {
+    border-left: 4px solid #198754 !important;
+}
+
+.admin-profile-card img {
+    border: 3px solid var(--bm-gold);
+}

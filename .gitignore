@@ -1,0 +1,12 @@
+# Ignore uploaded textbook images
+uploads/*
+!uploads/.gitkeep
+
+# Environment overrides (if added later)
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
